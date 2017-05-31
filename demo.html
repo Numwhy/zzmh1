@@ -1,0 +1,57 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>练习</title>
+    <style>
+        *{margin:0;padding:0;}
+        ul li,img{list-style:none;border:none;}
+        #demo{position:relative;padding:5px 0;}
+        .img-zz{position:absolute;left:0;top:0;z-index:999;background:rgba(0,0,0,.5);}
+        .img-title img{display:inline-block;padding:0 5px;position:relative;}
+    </style>
+    <script src="js/jquery-1.12.3.js"></script>
+</head>
+<body>
+<div id="demo">
+    <div class="img-zz">
+        <p></p>
+    </div>
+    <div class="img-title">
+        <img src="images/lynews9.jpg" width="150" height="150" data-tit="旅游1" />
+        <img src="images/lynews10.jpg" width="150" height="150" data-tit="旅游2" />
+        <img src="images/lynews11.jpg" width="150" height="150" data-tit="旅游3" />
+        <img src="images/lynews12.jpg" width="150" height="150" data-tit="旅游4" />
+        <img src="images/lynews13.jpg" width="150" height="150" data-tit="旅游5" />
+    </div>
+    <script>
+        var imgzz = $('.img-zz'),
+            aImg = $('.img-title img'),
+            _w = aImg.eq(0).outerWidth(true,true),
+            _h = aImg.eq(0).height();
+        aImg.each(function(){
+            $(this).hover(function(){
+                var aPosition = $(this).position(),
+                    tit = $(this).attr('data-tit');
+                imgzz.show();
+                imgzz.stop().animate({
+                    opacity : 1,
+                    left : aPosition.left,
+                    top : aPosition.top,
+                    width : _w,
+                    height : _h,
+                    lineHeight : _h + 'px'
+                },200).find('p').empty().append(tit).css({
+                    verticalAlign : 'middle',
+                    textAlign : 'center',
+                    color : '#fff'
+                })
+            })
+        });
+        imgzz.mouseout(function(){
+            $(this).hide();
+        })
+    </script>
+</div>
+</body>
+</html>

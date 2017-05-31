@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>河南网络电视台-郑州频道&nbsp;新闻报道</title>
+    <link rel="shortcut icon" href="../images/logo.ico">
+    <link rel="stylesheet" href="../css/css.css" type="text/css">
+    <link rel="stylesheet" href="../css/publicss.css" type="text/css">
+    <script src="../js/jquery-1.12.3.js"></script>
+</head>
+<body>
+<!-----------------顶部欢迎栏------------------->
+<div id="tit">
+    <p>欢迎来到河南网络电视台-郑州频道</p>
+</div>
+<div id="wrap">
+    <!-----------------开始------------------->
+        <!-----------------logo------------------->
+    <div class="logo">
+        <div class="logo-head">
+            <img src="../images/logo.jpg" alt="logo" />
+            <form action="#" method="post" class="form">
+                <div class="logo-search">
+                    <ul>
+                        <li>
+                            <a href="#">新闻</a>
+                            <span></span>
+                            <ul class="logo-tit">
+                                <li><a href="#">财经</a></li>
+                                <li><a href="#">教育</a></li>
+                                <li><a href="#">体育</a></li>
+                                <li><a href="#">文化</a></li>
+                                <li><a href="#">天气</a></li>
+                                <li><a href="#">美食</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <input type="text" name="text" placeholder="大家都在搜:大学生输光学费" onfocus="this.placeholder=''" onblur="this.placeholder='大家都在搜:大学生输光学费'" />
+                <p class="search"><img src="../images/logo_search.png" alt="search" /></p>
+            </form>
+            <div class="cl"></div>
+        </div>
+    </div>
+        <!-----------------contain------------------->
+    <div class="contain">
+        <!-----------------nav------------------->
+        <div class="nav clearfix">
+            <div class="nav-txt clearfix">
+                <ul>
+                    <li><a href="#" class="bgcolor">新闻</a></li>
+                    <li><a href="#">国际</a></li>
+                    <li><a href="#">国内</a></li>
+                    <li><a href="#">豫地</a></li>
+                    <li><a href="#" class="bgcolor">体育</a></li>
+                    <li><a href="#">娱乐</a></li>
+                    <li><a href="#">游戏</a></li>
+                    <li><a href="#">时尚</a></li>
+                </ul>
+                <ul class="border">
+                    <li><a href="#" class="bgcolor">财经</a></li>
+                    <li><a href="#">房产</a></li>
+                    <li><a href="#">汽车</a></li>
+                    <li><a href="#">家居</a></li>
+                    <li><a href="#" class="bgcolor">文化</a></li>
+                    <li><a href="#">美食</a></li>
+                    <li><a href="#">旅游</a></li>
+                    <li><a href="#">健康</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#" class="bgcolor">视频</a></li>
+                    <li><a href="#">教育</a></li>
+                    <li><a href="#">直播</a></li>
+                    <li><a href="#">荣誉</a></li>
+                    <li><a href="#" class="bgcolor">天气</a></li>
+                    <li><a href="#">投票</a></li>
+                    <li><a href="#">公益</a></li>
+                    <li><a href="#">商城</a></li>
+                </ul>
+            </div>
+            <img src="../images/dxw.jpg" alt="大象网" />
+        </div>
+        <img src="../images/lxwm1.jpg" alt="联系我们" />
+        <!------------------百度地图--------------------->
+        <h1 class="baiduTxt">点滴交融·和谐共赢！我们离你很近！</h1>
+        <div class="baidu clearfix">
+            <div class="baiduLx">
+                <p><b>公司地址:</b><br />郑州市二七区解放路与福寿街交叉口西南角(二七塔向西200米)正弘凯宾城二号楼2327室</p>
+                <p><b>联系电话:</b><br />0371-56650333;18439818111(赵总监)</p>
+            </div>
+            <div class="baiduMap">
+                <!DOCTYPE html>
+                <html xmlns="http://www.w3.org/1999/xhtml">
+                <head>
+                    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                    <meta name="keywords" content="百度地图,百度地图API，百度地图自定义工具，百度地图所见即所得工具" />
+                    <meta name="description" content="百度地图API自定义地图，帮助用户在可视化操作下生成百度地图" />
+                    <title>百度地图API自定义地图</title>
+                    <!--引用百度地图API-->
+                    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=Y3LE5ZVh5Q2AMlvLcPNgQSlaZcCMO0fh"></script>
+                </head>
+
+                <body>
+                <!--百度地图容器-->
+                <div style="width:700px;height:521px;border:#ccc solid 1px;font-size:12px" id="map"></div>
+                <!--<p style="color:red;font-weight:600">地图生成工具基于百度地图JS api v2.0版本开发，使用请申请密匙。
+                    <a href="http://developer.baidu.com/map/index.php?title=jspopular/guide/introduction" style="color:#2f83c7" target="_blank">了解如何申请密匙</a>
+                    <a href="http://lbsyun.baidu.com/apiconsole/key?application=key" style="color:#2f83c7" target="_blank">申请密匙</a>
+                </p>-->
+                </body>
+                <script type="text/javascript">
+                    //创建和初始化地图函数：
+                    function initMap(){
+                        createMap();//创建地图
+                        setMapEvent();//设置地图事件
+                        addMapControl();//向地图添加控件
+                        addMapOverlay();//向地图添加覆盖物
+                    }
+                    function createMap(){
+                        map = new BMap.Map("map");
+                        map.centerAndZoom(new BMap.Point(113.667059,34.758667),15);
+                    }
+                    function setMapEvent(){
+                        map.enableScrollWheelZoom();
+                        map.enableKeyboard();
+                        map.enableDragging();
+                        map.enableDoubleClickZoom()
+                    }
+                    function addClickHandler(target,window){
+                        target.addEventListener("click",function(){
+                            target.openInfoWindow(window);
+                        });
+                    }
+                    function addMapOverlay(){
+                        var markers = [
+                            {content:"郑州市二七区解放路与福寿街交叉口西南角(二七塔向西200米)_正弘凯宾城二号楼2326室",title:"我们在这里",imageOffset: {width:0,height:3},position:{lat:34.758723,lng:113.667077}}
+                        ];
+                        for(var index = 0; index < markers.length; index++ ){
+                            var point = new BMap.Point(markers[index].position.lng,markers[index].position.lat);
+                            var marker = new BMap.Marker(point,{icon:new BMap.Icon("http://api.map.baidu.com/lbsapi/createmap/images/icon.png",new BMap.Size(20,25),{
+                                imageOffset: new BMap.Size(markers[index].imageOffset.width,markers[index].imageOffset.height)
+                            })});
+                            var label = new BMap.Label(markers[index].title,{offset: new BMap.Size(25,5)});
+                            var opts = {
+                                width: 200,
+                                title: markers[index].title,
+                                enableMessage: false
+                            };
+                            var infoWindow = new BMap.InfoWindow(markers[index].content,opts);
+                            marker.setLabel(label);
+                            addClickHandler(marker,infoWindow);
+                            map.addOverlay(marker);
+                        };
+                    }
+                    //向地图添加控件
+                    function addMapControl(){
+                        var scaleControl = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+                        scaleControl.setUnit(BMAP_UNIT_IMPERIAL);
+                        map.addControl(scaleControl);
+                        var navControl = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+                        map.addControl(navControl);
+                        var overviewControl = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:true});
+                        map.addControl(overviewControl);
+                    }
+                    var map;
+                    initMap();
+                </script>
+                </html>
+            </div>
+        </div>
+        <!------------------公司文化--------------------->
+        <div class="bd1">
+            <h1>大象网简介</h1>
+            <p>大象网是河南电视台的唯一官方网站，又称河南网络电视台。大象网将通过宽带互联网等新载体、新渠道、新手段向社会传达信息、宣传党和国家方针政策，对河南省内重大政治、经济、社会、文化、体育等活动或事件进行报道宣传，引导社会舆论。</p>
+            <p>大象网是河南作为新媒体领域里的重要宣传阵地，它具有视频直播、直播时移、视频点播等特色功能。并具有论坛、微博、评论、投票等互动功能。大象网拥有河南电视台所有版权节目的网络传播权;内容丰富，覆盖面广，侧重视听。而郑州三富科技有限公司则是大象网郑州运营中心的唯一窗口，负责大象网的网络运营，对外宣传，视频制作，企业策划，会展服务等具体工作。</p>
+            <p>大象网将以全新的面貌，联动整个全国地区，打造全国最有影响力的媒体集团，实现新的跨越。</p>
+        </div>
+        <a href="http://www.zhenmuming.com/" target="_blank"><img src="../images/gg_6.jpg" alt="真目明" /></a>
+        <!-----------------footer------------------->
+        <div class="footer">
+            <p>Copyright&nbsp;&copy;&nbsp;河南电视台大象网-郑州运营中心&nbsp;版权所有</p>
+        </div>
+    </div>
+    <!------------------联系我们------------------>
+    <div class="lxwm">
+        <ul>
+            <li class="li-bg-wx">
+                <img src="../images/wx.jpg" width="84" height="84" alt="微信" />
+                <p>大象网微信</p>
+            </li>
+            <li class="li-bg-xlwb">
+                <img src="../images/xlwb.png" width="84" height="84" alt="新浪微博" />
+                <p>大象网微博</p>
+            </li>
+            <li class="li-bg1">
+                <a href="conductUs.html" target="_blank">联系我们</a>
+            </li>
+            <li class="li-bg1 goTop">
+                <a>回到顶部</a>
+            </li>
+        </ul>
+    </div>
+</div>
+    <script src="../js/jrie.js"></script>
+    <script src="../js/style.js"></script>
+</body>
+</html>

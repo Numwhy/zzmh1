@@ -1,0 +1,154 @@
+/*******************样式清空*******************/
+html,body,div,ul,ol,li,h1,h2,h3,h4,h5,h6,p,form,input,button{
+    margin:0;
+    padding:0;
+}
+ul,ol,li,img,a,form,input,button,textarea{
+    list-style:none;
+    text-decoration:none;
+    vertical-align:top;
+    outline:none;
+    border:none;
+}
+/****************清除浮动******************/
+.clearfix:after{
+    content:'';
+    width:0;
+    height:0;
+    display:block;
+    clear:both;
+}
+.clearfix{
+    overflow:hidden;
+}
+.cl{
+    clear:both;
+}
+.ml,.healthnews-box2-right ul li p{
+    margin-left:10px;
+}
+.ml1{
+    margin-left:5px;
+}
+.mt{
+    margin-top:10px;
+}
+.mc{
+    margin:0 11px;
+}
+.mc1{
+    margin:0 2px;
+}
+.mc2{
+    margin:0 10px;
+}
+.dis{display:none;}
+/****************定义字体******************/
+body{
+    font:62.5% '微软雅黑','Microsoft Yahei','宋体','arial';
+    background:url("../images/bg.png") repeat;
+}
+#wrap{
+    max-width:1440px;
+    min-width:1024px;
+    margin:5px auto 0;
+    position:relative;
+    background:#FAFAFA;
+}
+/************公共样式***************/
+.logo-head img,.form,.form input,.logo-search,.search,.cb3-txt1-ul li,.con-box4-more a,.con-box4-more span,.dynews-left,.dynews-center1,.dynews-right,.dynews-left-slide ul li,.dynews-wysy-txt ul li,
+.nav-txt,.nav img,.nav-txt ul,.nav-txt ul li,.cb-left,.cb-right,.xw-box-tit,.img-tit>a img,.tjxw ul li>a,.cb3-txt-ti ul li,.xw-box-tit ul li span,.gjztx>ul>li span,.borT li span,.cb3-txt1-ul1 li span,
+.con-box4-txt1 li span,.cb-right-bt span,.con-box2 .gjxw,.gjxw1,.img-tit1 ul li,.cb3-txt,.cb3-txt1,.dis-tit1 p,.dis-tit2 p,.dis-tit3 p,.con-box4-left,.con-box4-right,.con-box4-txt li,.con-box4-txt1 li,
+.friend ul li,.baiduMap,.baiduLx,.con_left,.con_right,.video-left,.video-right,.video-right li img,.video-right li p,.video-tit span,.dynews-wysy-txt ul li a,
+.dynews-wysy-txt ul li span,.dynews-centerr span,.dynews-center-rd,.dynews-center-24rd ul li span,.dynews-center-24rd ul li a,.dynews-center-center>li>span,.dynews-center-center>li>a,.dynews-pdjx ul li span,
+.dynews-pdjx ul li a,.dynews-right-tit>ul>li,.gjnews-left>h1 span,.gjnews-left-news1>a,.gjnews-left-news1-tit,.gjnews-left-news1 ul li,.lynews-box1-left,.lynews-box1-right,.lynews-box1-anniu span,.lynews-box2-left,
+.lynews-box2-right,.cjnews-left,.cjnews-right,.cjnews-left-tit ul li span,.cjnews-right-top ul li>a,.cjnews-right-top-txt,.cjnews-right-bt span,.cjnews-right-bottom ul li,.cjnews-right-bottom ul li span,
+.cjnews-right-bottom ul li a,.cjnews-left-tit ul li a,.lynews-box2-left-txt ul li span,.lynews-box2-left-txt ul li a,.lynews-box2-left-txt,.lynews-box2-left-txt1,.lynews-box2-left-txt1 ul li,
+.sportnews-box1-left,.sportnews-box1-right,.sportnews-box1-right ul li,.lynews-box2-bottom-ly,.lynews-box2-bottom-ly ul li,.lynews-box2-right ul li a,.lynews-box2-right ul li span,.lynews-box3 ul li,
+.csnews-left,.csnews-right,.cs-nexPrev a,.csnews-right ul li a img,.gyjxs-txt,.csnews-box2>div,.csnews-box2-left ul li span,.csnews-box2-left ul li a,.csnews-box2-center ul li a img,.csnews-box2-right ul li,
+.csnews-box3>div,.csnews-box3-left-txt a img,.csnews-box3>div,.csnews-box3-left-txt p,.csnews-box3-right-top ul li a img,.stargy,.csnews-box3-right-bottom ul li span,.csnews-box3-right-bottom ul li a,
+.spnews-box2 ul li a img,.spnews-box2-txt,.housenews-box1-left ul li,.housenews-box1-left,.housenews-box1-right,.housenews-box2>div,.housenews-box2-left-top li,.housenews-box2-left-bottom li span,
+.housenews-box2-left-bottom li a,.housenews-box2-center-top li a img,.healthnews-box1-left ul li,.healthnews-box1-left,.healthnews-box1-right,.healthnews-box1-right-txt li a img,.healthnews-box2-left,
+.healthnews-box2-right,.healthnews-box2-left-txt1,.healthnews-box2-left-txt2,.healthnews-box2-right ul li a img,.healthnews-box2-right ul li p,.healthnews-box3-left,.healthnews-box3-right,
+.healthnews-box3-left ul li a img,.carnews-box1-left,.carnews-box1-right,.carnews-box1-left ul li,.carnews-box1-right-txt li span,.carnews-box1-right-txt li a,.carnews-box2-left,.carnews-box2-right,
+.carnews-box2-left-txt1,.carnews-box2-left-txt2,.carnews-box2-left ul li span,.carnews-box2-left ul li a,.carnews-box2-right ul li span,.carnews-box2-right ul li a,.carnews-box3-left,.carnews-box3-right,
+.carnews-box3-left ul li a img,.carnews-box3-right-txt a img,.carnews-box3-right-txt p,.carnews-box3-right-txt1 span,.carnews-box3-right-txt1 a,.carnews-box3-right-txt2 a img,.carnews-box3-right-txt2 p,
+.carnews-box3-right-bottom li,.home-box1 ul li,.home-box2-design,.home-design-txt,.home-box2-design>a img,.home-design-txt ul li span,.home-design-txt ul li a,.home-box3>div,.home-box3-left-txt,
+.home-box3-left a img,.home-box3-left-txt li span,.home-box3-left-txt li a,.gamenews-box2-left,.gamenews-box2-right,.gbl-left,.gbl-right,.gbl-top li,.weathnews-box1-right,.weathnews-box1-left,.foodbox2>div,
+.foodbox2-left-bd ul li,.foodbox2-right ul li,.food-box3-news>ul,.food-box3>div,.food-slide ul li,.rynews-box2>div,.rynews-box2-left ul li,.rybox2-right-top a img,.rybox2-right-top-txt
+{
+    float:left;
+    display:block;
+}
+.logo-search ul li a:hover,.nav-txt ul li a:hover,.xw-box-tit ul li a:hover,.gjxw ul li a:hover,
+.con-box4-txt1 li a:hover,.friend ul li a:hover,.cjnews-right-bottom ul li a:hover, .con_right ul li:hover a,
+.video-right li:hover p,.lynews-box1-left p a,.lynews-box1-right-txt1 li p a,.lynews-box2-right ul li span,
+.gyjxs-txt p a:hover,.csnews-right h1,.csnews-box2>div h1,.csnews-box3 h1,.csnews-box3 h2 a:hover,.housenews-box1-right h1,
+.spnews-box2 h1,.housenews-box1-right a:hover,.housenews-box2>div h1,.housenews-box2-left-bottom li span,.housenews-box3 p,
+.healthnews-box1-anniu a,.healthnews-box1-right h1,.healthnews-box1-right li a:hover,.healthnews-box2 h1,.healthnews-box3 h1,
+.healthnews-box3-right ul li a:hover,.carnews-box1-right-txt li a:hover,.carnews-box2 a:hover,.homenews a:hover,.homenews h1,
+.gamenews-box2 h1,.gamenews-box2 a:hover,.weathnews-box2 h1,.weathnews-box2 p,.foodbox2-left-hd ul li p a,.foodbox2-right ul li p a,
+.rynews-box2 h1,.rybox2-right-top h3,.rynews-box2-left h1 a,.rynews-box2-right h1 a{
+    color:#ff0000;
+}
+.xw-box-tit ul li span,.gjztx>ul>li span,.borT li span,.cb3-txt1-ul1 li span,.con-box4-txt1 li span,.cjnews-right-bottom ul li span,
+.cjnews-left-tit ul li span,.lynews-box2-left-txt ul li span,.lynews-box2-right ul li span,.csnews-box2-left ul li span,
+.csnews-box3-right-bottom ul li span,.housenews-box2-left-bottom li span,.carnews-box1-right-txt li span,.carnews-box2-left ul li span,
+.carnews-box2-right ul li span,.carnews-box3-right-txt1 span,.home-design-txt ul li span,.home-box3-left-txt li span{
+    width:5px;
+    height:5px;
+    color:#ff0000;
+    text-align:center;
+    line-height:5px;
+    display:block;
+}
+.dynews-left-slide ul,.dynews-left-slide ul li p,.dynews-left-slide span,.video-more,.con-box4-txt li span,.cb3-txt1-slide span,.dynews-left-slide span,
+.cb3-txt1-ul li p,.cb3-txt1-ul,.cb-right-bt,.slide ul li p,.slide ul li,.logo-tit,.logo-search>ul>li>span,.dynews-center-24rd,
+.dynews-jcs>h1 span,.gjnews-left-tit p,.lynews-box1-left ul li,.lynews-box1-anniu,.cjnews-right-top ul li,.cjnews-right-bt,.lynews-box2-left-txt1 ul li p,
+.sportnews-box1-right ul,.sportnews-box1-right ul li p,.lynews-box2-bottom-ly ul,.nexPre a,.csnews-left ul li,.cs-nexPrev,.csnews-box2-right ul li p,
+.cs-nexprev1 a,.csnews-box2-right ul,.sp-nexPrev a,.spnews-box2-right,.housenews-box1-left ul,.housenews-box1-left ul li p,.housenews-box1-anniu a,
+.healthnews-box1-left ul,.healthnews-box1-anniu a,.healthnews-box2-left-txt1 ul li p,.carnews-box1-left ul,.carnews-box1-left ul li p a,.carnews-box1-anniu a,
+.home-box1 ul,.home-box1 ul li p a,.home-nexPre a,.home-box4-right,.gbl-top li p,.gamePre a,.gbl-top,.weathnews-box2>span,.foodbox2-left-bd ul li span,
+.food-box3>div>span,.foodnews-box1-anniu a,.food-slide ul,.food-slide ul li p
+{
+    position:absolute;
+}
+.lynews-box2-left-txt1 ul li,.lynews-box2-bottom-ly,.cjnews-right-top,.sportnews-box1-right,.sportnews-box1-right ul li,.logo-search,.cb-right,.cb-right ul,
+.cb3-txt1,.cb3-txt1-ul li,.con-box4-txt li,.video-right,.dynews-left-slide,.dynews-left-slide ul li,.dynews-center,.dynews-center1,.dynews-jcs,.lynews-box1-left,
+.lynews-box2-left,.csnews-left ul,.csnews-left,.csnews-box2-right,.csnews-box2-right ul li,.spnews-box2,.housenews-box1-left,.housenews-box1-left ul li,
+.healthnews-box1-left,.healthnews-box2-left-txt1 ul li,.carnews-box1-left,.carnews-box1-left ul li,.home-box1,.home-box1 ul li,.gbl-top li,.gbl-top1,
+.weathnews-box2,.foodbox2-left-bd ul li,.food-box3>div,.food-slide,.food-slide ul li{
+    position:relative;
+}
+.lynews-box2-left-txt1 ul li,.lynews-box1,.lynews-box1-left,.lynews-box2-bottom-ly,.lynews-box2-bottom-ly ul li,.lynews-box3 ul li,.sportnews-box1-right,#tit,
+.logo-tit,.contain,.xw-box-tit ul li a,.img-tit1 ul li a,.cb3-txt-ti ul li,.cb3-txt1,.cb3-txt1-ul li,.con-box4-txt li,.video,.video-zb,.video-plt,.dynews-left-slide,
+.dynews-left-slide ul li,.csnews-box2-right,.csnews-left,.housenews-box1-left,.healthnews-box1-left,.carnews-box1-left,.gbl-top1,.weathnews-box2-frame,.foodbox2-left-hd,
+.food-slide,.gjnews-left-tit{
+    overflow:hidden;
+}
+.shsh ul li,.gjxw>ul>li,.cb3-txt ul li a,.cb3-txt1-ul1 li a,.con-box4-txt1 li,.dynews-center-24rd ul li a,.dynews-center-center>li>a,.dynews-pdjx ul li a
+{
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    overflow:hidden;
+}
+.dynews-left-slide ul li p a,.cjnews-left-tit h1 a,.lynews-box1-left a,.dynews-wysy-txt h2 a,.dynews-right-news h2 a,
+.dynews-centerr span a,.dynews-center-24rd ul li a,.dynews-center-center>li>a,.dynews-pdjx ul li a,.gjnews-left-news1 a,
+.gjnews-left-news1 a,.lynews-box1-right ul li>a,.lynews-box2-right ul li p a,.logo-search ul li a,.lxwm ul li p,.lxwm ul li a,
+.footer p,.friend ul li,.con-box4-txt1 li a,.con-box4-txt li p a,.cb3-txt ul li a,.cb3-txt1-ul1 li a,
+.gjztx>ul>li>a,.img-tit p a,.img-tit1 p a,.gjxw1 a,.xw-box-tit ul li a,.nav-txt ul li a,.cjnews-hot a,.cjnews-left-tit ul li a,
+.cjnews-right-top-txt p a,.cjnews-right-bottom ul li a,.lynews-box2-left-txt ul li a,.lynews-box2-right ul li p a,.sportnews-box1-left a,
+.lynews-box2-bottom-ly ul li p a,.lynews-box2-right ul li a,.lynews-box3 ul li a,.csnews-box1 a,.csnews-box2-left a,.csnews-box2-center a,
+.csnews-box3 a,.spnews-box2-txt a,.spnews-box2-right a,.housenews-box1-right a,.housenews-box2 a,.healthnews-box1-left ul li a,
+.healthnews-box1-right a,.healthnews-box2-left-txt2 a,.healthnews-box2-right a,.healthnews-box3-right ul li a,.carnews-box1-right-txt li a,
+.carnews-box2 a,.carnews-box3 a,.home-design-txt ul li a,.home-box3 a,.home-box4-right ul li a,.housenews-box2-left-bottom a,.food3-hd a,
+.rynews-box2-left ul li a{
+    color:#000;
+}
+.lynews-box1-left h2 a:hover,.lynews-box1-right ul li>a:hover,.cjnews-left-tit a:hover,.cjnews-hot ul li a:hover,.cjnews-right-top-txt p a:hover,.lynews-box2-left-txt1 ul li p a:hover,.sportnews-box1-left ul li a:hover,
+.lynews-box2-bottom-ly ul li p a:hover,.lynews-box3 ul li a:hover,.csnews-left ul li p a:hover,.csnews-box2-right ul li p a:hover,.stargy p a:hover,.csnews-box3-right-bottom p a,
+.spnews-box2-txt p a:hover,.spnews-box2-right ul li a:hover,.housenews-box2-left a:hover,.housenews-box2-center-bottom li a:hover,.housenews-box2-right a:hover,.healthnews-box1-left ul li a:hover,
+.healthnews-box2-left-txt1 ul li p a:hover,.healthnews-box2-left-txt2 ul li p a:hover,.healthnews-box2-right ul li p a:hover,.carnews-box3-right-txt1 a:hover,.rynews-box2-left a:hover{
+    color:#ff0000;
+    text-decoration:underline;
+}
